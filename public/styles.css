@@ -1,0 +1,186 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #111111;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Khula', sans-serif;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 18px;
+  letter-spacing: 0.46px;
+}
+
+li {
+  letter-spacing: 1.86px;
+  line-height: 33px;
+}
+
+.green {
+  color: #7ece92;
+}
+
+.yellow {
+  color: #cace7e;
+}
+
+.red {
+  color: #ce907e;
+}
+
+.center-center {
+  display: flex;
+  max-width: 920px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 900px;
+  min-width: 320px;
+  margin: 0 15%;
+}
+
+#gumroad-button {
+  background-color: #59b25c !important;
+  color: #fff !important;
+}
+
+a, a:hover, a:visited {
+  color: #934DD4;
+  font-weight: bold;
+}
+
+section {
+  min-height: 400px;
+  padding: 20px 0;
+}
+
+section, header, .logo, .nav {
+  display: flex;
+}
+
+strong {
+  font-weight: 800;
+}
+
+/* header ------------*/
+
+header {
+  background: #934DD5;
+  color: #fff;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 222px;
+}
+
+.nav {
+  flex-wrap: wrap;
+}
+
+nav a, nav a:hover, nav a:visited {
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 4px;
+}
+
+.logo {
+  width: 286px;
+  height: 107px;
+  text-indent: -9999px;
+}
+
+/* hero ---------------------*/
+
+.hero {
+  color: #934DD4;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #934DD5;
+  letter-spacing: 0.46px;
+}
+
+/* convers ---------------------*/
+
+#covers {
+  background: #934DD4;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* progress ---------------------*/
+
+#progress {
+  background: #3a3847;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* progress ---------------------*/
+
+#author {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#author img {
+  max-width: 300px;
+}
+
+.me {
+  margin-right: 20px;
+}
+
+/* contact ---------------------*/
+
+#contact {
+  background: #3a3847;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+
+

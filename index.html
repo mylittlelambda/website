@@ -7,84 +7,107 @@
   <title>My Little Lambda</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-  <style>
-    body {
-      color: #934DD4;
-      font-family: 'Lato', sans-serif;
-    }
-
-    #gumroad-button {
-      background-color: #59b25c !important;
-      color: #fff !important;
-    }
-
-    .container {
-      margin: 20px auto;
-      max-width: 960px;
-    }
-
-    .logo {
-      max-width: 66px;
-      position: relative;
-      top: 3px;
-    }
-
-    p {
-      color: #101010;
-    }
-
-    li {
-      color: #101010;
-    }
-
-    a, a:hover, a:visited {
-      color: #934DD4;
-      font-weight: bold;
-    }
-  </style>
-  <script src="https://gumroad.com/js/gumroad.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Khula:400,600,800|Open+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="/public/styles.css">
 </head>
 
 <body>
-  <div class="container">
+  <header>
+    <div class="logo">
+      <img src="/public/images/logo.svg" alt="My Little Lambda">
+      <h1>My Little Lambda</h1>
+    </div>
+    <div class="nav">
+      <nav>
+        <a href="#covers">What this book covers</a>
+        <a href="#progress">Progress</a>
+        <a href="#author">Author</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="center-center">
+      <h2>Learning the <strong>terminology</strong> and <strong>concepts</strong> of <strong>Functional Programming</strong>        is harder than it needs to be </h2>
+    </div>
+  </section>
+  <section id="covers">
+    <div class="container">
+      <h2>What this book covers</h2>
+      <p>This book will teach you all of these concepts from start to finish. We will be hands on building each of these with
+        <strong>JavaScript</strong>.</p>
+      <p>By the end, you should be able to take the intent behind these ideas and apply them to <strong>any project</strong>.</p>
+      <ul>
+        <li>Fold</li>
+        <li>Monads</li>
+        <li>Map</li>
+        <li>Flatmap</li>
+        <li>Reduce</li>
+        <li>Immutability</li>
+        <li>Currying</li>
+        <li>Types</li>
+        <li>Languages that are Functional by Default</li>
+      </ul>
+    </div>
+  </section>
+  <section id="progress">
+    <div class="container">
+      <h2>Progress</h2>
+      <ul>
+        <li>Name - <span class="green">✓</span></li>
+        <li>Introduction - <span class="green">✓</span></li>
+        <li>Chapter 1 - <span class="green">✓</span></li>
+        <li>Chapter 2 - <span class="yellow">in progress</span></li>
+        <li>Chapter 3 - <span class="yellow">in progress</span></li>
+        <li>Chapter 4 - <span class="red">planned</span></li>
+        <li>Chapter 5 - <span class="red">planned</span></li>
+        <li><strong>Early Release - <span class="red">planned</span></strong></li>
+        <li>Chapter 6 - <span class="red">planned</span></li>
+        <li>Chapter 7 - <span class="red">planned</span></li>
+        <li>Chapter 9 - <span class="red">planned</span></li>
+        <li>More - <span class="red">planned</span></li>
+      </ul>
+    </div>
+  </section>
+  <section id="author">
+    <div class="container">
+      <h2>About the Author</h2>
+      <div class="flex-container">
+        <div class="me">
+          <img src="/public/images/me.jpg" alt="picture of me">
+        </div>
+        <div class="content">
+          <h3>Why I am writing this book</h3>
+          <p>I have successfully taught Functional Programming to serveral teams. Over the years I have given talks, slides,
+            made projects to help people learn this material. I have decided to put that in a book.</p>
 
-    <h1><img class="logo" src="/assets/images/logo.png" /> My Little Lambda</h1>
-    <p>A book on functional programming by Richard Torruellas</p>
+          <p>Most people get hung up on the new terms and concepts they hear, making it harder to <strong>learn</strong>. Once
+            you learn these concepts, you will understand that a lot of people like <strong>Functional Programming</strong>            because it is <strong>easy</strong>.</p>
 
-    <h2>About the book</h2>
-    <p>We will be writing functions, and a lot of them. Small, predictable functions. We will test them. We will see how we
-      can make programs that are mainly made up of functions. We will combine them to make new functions. We will have fun.</p>
+          <h3>A little bit about me</h3>
 
-    <p>So, if you're checking out this book, you might already have an idea of what functional programming is. Either way, I
-      think you will get something from this book. We will be gradually going through many of the "major" FP concepts. Going
-      through these concepts should allow you to take these ideas to your current project, regardless of language.</p>
+          <p>I am currently a Senior Software Engineer at PlayStation. After joining PlayStation I became a technical lead,
+            and currenly lead and mentor a team of 6 engineers.</p>
 
-    <p>We will be mostly using JavaScript throughout this book. Although JavaScript is not considered a <em>pure</em> functional
-      language, it is actually quite capable of implementing most of the concepts. Later in the book we will go over what
-      a <em>pure functional language</em> is, but for now, lets focus on the things that will bring value to you <em>today</em>.</p>
-
-    <p><a id="gumroad-button" class="gumroad-button" href="https://gum.co/qxdPj" target="_blank">Pre order <strong>My Little Lambda</strong></a></p>
-
-    <h2>Progress</h2>
-    <ul>
-      <li>Name - &#10003;</li>
-      <li>Introduction - &#10003;</li>
-      <li>Chapter 1 - in progress</li>
-    </ul>
-
-    <h2>Contact</h2>
+          <p>I am also a new father. Just had my kid on April 30th 2017, and I am so excited about my future with her and my
+            wife.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact / Follow Along</h2>
     <p>If you want to keep tabs on current and future work, follow <a href="https://twitter.com/mylittlelambda" target="_blank">@mylittlelambda</a></p>
-  </div>
+  </section>
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-99548336-1', 'auto');
     ga('send', 'pageview');
-
   </script>
 </body>
 
