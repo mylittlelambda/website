@@ -1,3 +1,54 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom css ----------- */
+
 html {
   box-sizing: border-box;
 }
@@ -8,6 +59,7 @@ html {
 body {
   color: #111111;
   font-family: 'Open Sans', sans-serif;
+  line-height: 1.25em;
   margin: 0;
   padding: 0;
 }
@@ -15,24 +67,40 @@ body {
 h1, h2, h3, h4 {
   font-family: 'Khula', sans-serif;
   font-weight: 600;
+  line-height: 1.25em;
+  margin: 1em 0;
 }
 
 h2 {
   font-size: 32px;
+  margin-top: 0;
 }
 
 h3 {
   font-size: 24px;
 }
 
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
 p {
   font-size: 18px;
   letter-spacing: 0.46px;
+  line-height: 24px;
+  margin: 18px 0;
 }
 
 li {
   letter-spacing: 1.86px;
-  line-height: 33px;
+  margin-bottom: 10px;
 }
 
 .green {
@@ -55,14 +123,9 @@ li {
 }
 
 .container {
-  max-width: 900px;
-  min-width: 320px;
-  margin: 0 15%;
-}
-
-#gumroad-button {
-  background-color: #59b25c !important;
-  color: #fff !important;
+  margin: 0 auto;
+  max-width: 920px;
+  width: 100%;
 }
 
 a, a:hover, a:visited {
@@ -70,9 +133,8 @@ a, a:hover, a:visited {
   font-weight: bold;
 }
 
-section {
-  min-height: 400px;
-  padding: 20px 0;
+header, section {
+  padding: 40px 20px;
 }
 
 section, header, .logo, .nav {
@@ -108,6 +170,7 @@ nav a, nav a:hover, nav a:visited {
 .logo {
   width: 286px;
   height: 107px;
+  overflow: hidden;
   text-indent: -9999px;
 }
 
@@ -115,40 +178,24 @@ nav a, nav a:hover, nav a:visited {
 
 .hero {
   color: #934DD4;
+  height: 400px; /* IE11 align-items: center bug */
   justify-content: center;
+  min-height: 400px;
   align-items: center;
 }
 
 .hero h2 {
-  text-align: center;
   font-size: 36px;
+  text-align: center;;
   color: #934DD5;
   letter-spacing: 0.46px;
+  margin: 0;
 }
 
-/* convers ---------------------*/
+/* author ---------------------*/
 
-#covers {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* progress ---------------------*/
-
-#progress {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;;
-}
-
-/* progress ---------------------*/
-
-#author {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
+.content-header {
+  margin-top: 0;
 }
 
 .flex-container {
@@ -157,12 +204,9 @@ nav a, nav a:hover, nav a:visited {
   justify-content: space-around;
 }
 
-#author img {
-  max-width: 300px;
-}
-
 .me {
   margin-right: 20px;
+  min-width: 300px;
 }
 
 /* contact ---------------------*/
@@ -175,18 +219,37 @@ nav a, nav a:hover, nav a:visited {
   align-items: center;
 }
 
-@media (max-width: 800px) {
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+@media only screen and (max-width: 600px) {
+  .nav {
+    display: none;
   }
-}
 
+  h1, h2, h3, h4 {
+    text-align: center;
+  }
 
-@media (max-width: 600px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  .content-header {
+    margin-top: 1em;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .me {
+    margin: 0;
+    min-width: 100%;
+  }
+
   .nav {
     display: none;
   }
 }
-
