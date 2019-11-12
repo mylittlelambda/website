@@ -1,0 +1,23 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "alex": "alex . --html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mylittlelambda/website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mylittlelambda/website/issues"
+  },
+  "homepage": "https://github.com/mylittlelambda/website#readme",
+  "dependencies": {
+    "alex": "^8.0.0"
+  }
+}
